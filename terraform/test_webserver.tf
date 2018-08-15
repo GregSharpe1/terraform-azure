@@ -28,7 +28,7 @@ resource "azurerm_virtual_machine" "terraform_webserver" {
         disable_password_authentication = true
         ssh_keys {
             path     = "/home/${var.azure_admin_user}/.ssh/authorized_keys"
-            key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTWT8KVki//S0vO7D3Pv+CPdEkYhKq+DdXLXPSbQxTbLQNeWAIa4jKpsh8aa2Wyi1QfmeyC0ZWWfqYEcup62RvY7KjOgx3VlLcX5tL5U8O/oMUckMSsdPzAb9jPjR7lAmL9lwT1lKvyjQCWISmZGg1AQDrHBQIkwuEQ2qmg585aFkOl7JPJl6lmxGW9nlMXafJ2QDIiDDbEkjdV+umw8W1EYoawMBLG15M9m7vLnEelqO2M+yANIOoCkAZFDHFhBdSE8vh6MC50mDe+U4gW9DtOHGaN7Yq7z+71+lSw8qTnfLCvlmQe2aIwuUd/MqaaP0hp8sjVSOd8ypMlqs4jRq9 Azure SSH Key - greg.sharpe@devopsguys.com"
+            key_data = "${var.azure_demo_ssh_key}"
         }
     }
 
