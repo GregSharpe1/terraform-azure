@@ -5,3 +5,7 @@ variable "azure_default_location" {
 variable "azure_admin_user" {
   default = "admin"
 }
+
+variable "azure_demo_ssh_key" {
+  default = ""
+}
