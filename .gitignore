@@ -1,0 +1,4 @@
+# Ignore any Terraform modules included
+terraform/.terraform/
+# and the backup state file
+terraform/terraform.tfbackup
